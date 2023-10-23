@@ -1,0 +1,43 @@
+/*  Css for testing  */
+
+/* RESET RULES */
+img {
+  display: block;
+}
+
+#app > * {
+  margin-bottom: 20px;
+}
+
+/* RANDOM COLOR CLASSES */
+
+.custom-title {
+  background-color: #ff0000;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-aqua {
+  background-color: aqua;
+}
+
+/* CUSTOM IMG */
+.img-custom {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.b-rad-40 {
+  border-radius: 40px;
+}
+
+/* SPAN */
+span {
+  margin: 0 10px;
+}

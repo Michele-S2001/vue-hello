@@ -4,14 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hello Vue!</title>
+  <link rel="stylesheet" href="./css/experiments.css">
   <script src="https://unpkg.com/vue@3"></script>
 </head>
 <body>
 
   <div id="app">
 
-    <h1>{{ message }}</h1>
-    <img :src="imgURL">
+    <!-- adding a dinamic style class to title -->
+    <h1 :class="titleClass">{{ message }}</h1>
+
+    <!-- adding a dinamic and static classes to the img -->
+    <img :class="['img-custom', imgBorders]" :src="imgURL">
+
+    <!-- call a function that increase a number -->
+    <button @click="increaseValue">AUMENTA INDICE</button>
+    <span>{{ num }}</span>
+    <button @click="resetCounter">RESET</button>
 
   </div>
   
